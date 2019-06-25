@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator</title>
+</head>
+<body>
+<p>Bài 1: Viết chương trình nhập vào giá trị cho a và b. Tính tổng a và b, nếu tổng nhỏ hơn 4, hiển thị chuỗi Below, ngược lại hiển thị Over. Lưu ý sử dụng toán tử ? :
+
+</p>
+<button type="button" onclick="showResult()">Bài 1.</button>B
+<p>Bài 2.</p>
+<button type="button" onclick="showMessage()">Bài 2.</button>
+
+<script>
+function showResult(){
+    let a= parseInt(prompt("a: "));
+    let b= parseInt(prompt("b: "));
+    let result=(a+b<4)? "Below":"Over";
+   document.write(result);
+
+}
+function showMessage(){
+    let login=prompt('login: ');
+    let message=(login=='Employee')? 'Hello':( login=='Director')? 'Greetings':(login=='')?'No login':'';
+    alert(message);
+}
+</script>
+</body>
+</html>
